@@ -56,6 +56,13 @@ To use this feature add the following to your settings file:
 
     GOOGLE_ANALYTICS_TRACK_PAGE_LOAD_TIME = True
 
+## Anonymizing IP Addresses ##
+
+As required by some legislations, Google has added [IP anonymization](http://analytics.blogspot.com/2010/05/greater-choice-and-transparency-for.html) to the Google Anlytics API.
+To enable anonymization, add the following line to your settings file:
+
+    GOOGLE_ANALYTICS_ANONYMIZE_IP = True
+
 ## Supporting other tracking methods ##
 
 Sometimes, the built-in code snippets are not sufficient for what you want to

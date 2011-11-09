@@ -57,6 +57,9 @@ class AnalyticsNode(template.Node):
                 'track_page_load_time': getattr(settings,
                                                 "GOOGLE_ANALYTICS_TRACK_PAGE_LOAD_TIME",
                                                 False),
+                'anonymize_ip': getattr(settings,
+                                        'GOOGLE_ANALYTICS_ANONYMIZE_IP',
+                                        False),
             })
             return t.render(c)
         else:
